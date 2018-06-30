@@ -1,0 +1,50 @@
+{
+  "name": "aop-monitor",
+  "version": "1.0.6",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.js --out-dir dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mini-peanut/aop-monitor.git"
+  },
+  "author": "xianghuijin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mini-peanut/aop-monitor/issues"
+  },
+  "homepage": "https://github.com/mini-peanut/aop-monitor#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "> 1%",
+              "last 2 versions",
+              "not ie <= 8"
+            ]
+          }
+        }
+      ],
+      "stage-2"
+    ],
+    "plugins": [
+      "transform-runtime",
+      "transform-remove-strict-mode"
+    ]
+  }
+}
